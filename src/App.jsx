@@ -17,7 +17,7 @@ export const App = () => {
     setCount(prev => {
       const afterOne = prev + 1;
 
-      return afterOne % 5 === 0 ? afterOne + 100 : afterOne;
+      return prev % 5 === 0 ? afterOne + 100 : afterOne;
     });
   };
 
